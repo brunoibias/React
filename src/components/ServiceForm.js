@@ -50,14 +50,14 @@ export default class ServiceForm extends React.Component {
         };
     } */
     onClick(e) {
-    this.setState({
+        this.setState({
 
-        title: '',
-        description: '',
-        timeIn: '',
-        timeOut: '',
-    });
-    alert('Tarefa criada com sucesso!')
+            title: '',
+            description: '',
+            timeIn: '',
+            timeOut: '',
+        });
+        alert('Tarefa criada com sucesso!')
     }
 
     render() {
@@ -72,6 +72,8 @@ export default class ServiceForm extends React.Component {
                             <div class="input-field col s12">
                                 <Label>Título da Tarefa</Label>
                                 <input
+                                    placeholder="mínimo de 5 Caracteres"
+                                    minlength="5"
                                     type="text"
                                     class="form-control"
                                     value={title}
@@ -84,6 +86,8 @@ export default class ServiceForm extends React.Component {
                             <div class="input-field col s12">
                                 <label>Descrição</label>
                                 <input
+                                    placeholder="mínimo de 10 Caracteres"
+                                    minlength="10"
                                     row="3"
                                     type="text"
                                     class="form-control"

@@ -1,9 +1,9 @@
-Do the commands
+Do the commands:
 npm install
 yarn
 yarn start
 
-In Stylization I used
+In Stylization I used:
 Styled Components
 https://styled-components.com/
 
